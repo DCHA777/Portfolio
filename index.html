@@ -22,7 +22,7 @@
         /* Typography System */
         h1 { font-family: 'Playfair Display', serif; font-size: 84px; font-weight: 500; margin: 0; line-height: 1.1; }
         .slide-title { font-family: 'Playfair Display', serif; font-size: 48px; font-weight: 500; color: #C5A059; margin-bottom: 50px; border-bottom: 1px solid rgba(197,160,89,0.2); padding-bottom: 15px; }
-        h3 { font-family: 'Playfair Display', serif; font-size: 32px; color: #C5A059; margin: 0 0 15px 0; }
+        h3 { font-family: 'Playfair Display', serif; font-size: 32px; color: #C5A059; margin: 0 0 5px 0; }
         p, li { font-size: 19px; line-height: 1.6; color: #CCD6F6; font-weight: 300; }
         .subtitle { font-size: 14px; font-weight: 500; text-transform: uppercase; letter-spacing: 5px; color: #8892B0; }
         .tagline { font-family: 'Playfair Display', serif; font-style: italic; font-size: 28px; color: #8892B0; margin-top: 40px; }
@@ -34,22 +34,16 @@
         .tile { background-color: #112240; padding: 40px; border-radius: 4px; border: 1px solid rgba(197,160,89,0.1); text-align: center; }
         .tile i { font-size: 45px; color: #C5A059; margin-bottom: 25px; }
 
-        /* High-Definition Fixed Frames - Crisp Photo Resolution Fixed */
+        /* High-Definition Fixed Frames - Crisp Native Proportions Fixed */
         .image-frame { border: 2px solid #C5A059; border-radius: 4px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
         .image-frame img { width: 100%; height: 100%; object-fit: contain; background-color: #112240; display: block; }
 
         .portfolio-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
-        .portfolio-box { height: 340px; border: 1px solid rgba(197,160,89,0.3); border-radius: 4px; overflow: hidden; margin-bottom: 10px; box-shadow: 0 6px 18px rgba(0,0,0,0.3); background-color: #112240; }
-        .portfolio-box img { width: 100%; height: 100%; object-fit: contain; }
+        .portfolio-box { height: 340px; border: 1px solid rgba(197,160,89,0.2); border-radius: 4px; overflow: hidden; margin-bottom: 10px; box-shadow: 0 6px 18px rgba(0,0,0,0.3); background-color: #112240; display: flex; align-items: center; justify-content: center; }
+        .portfolio-box img { max-width: 100%; max-height: 100%; object-fit: contain; width: auto; height: auto; display: block; }
 
-        /* Data Tables */
-        table { width: 100%; border-collapse: collapse; }
-        th { text-align: left; color: #C5A059; padding: 15px 0; text-transform: uppercase; letter-spacing: 2px; border-bottom: 2px solid rgba(197,160,89,0.3); }
-        td { padding: 20px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
-
-        .download-btn { border: 2px solid #C5A059; color: #C5A059; padding: 18px 45px; text-decoration: none; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; border-radius: 4px; display: inline-block; transition: all 0.3s ease; }
-        .download-btn:hover { background-color: #C5A059; color: #0A192F; }
-    </style>
+        /* Data Tables & Timelines */
+        .milestone-scroll { display: flex; flex-direction: column; gap: 40px; }
         table { width: 100%; border-collapse: collapse; }
         th { text-align: left; color: #C5A059; padding: 15px 0; text-transform: uppercase; letter-spacing: 2px; border-bottom: 2px solid rgba(197,160,89,0.3); }
         td { padding: 20px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
@@ -92,9 +86,21 @@
     <h2 class="slide-title">Core Competencies</h2>
     <div class="content-area">
         <div class="tile-grid">
-            <div class="tile"><i class="fa-solid fa-compass-drafting"></i><h3>Leadership</h3><p>Directing the full creative vision and execution of luxury projects.</p></div>
-            <div class="tile"><i class="fa-solid fa-couch"></i><h3>Procurement</h3><p>Strategic sourcing of custom furniture and high-quality FF&E.</p></div>
-            <div class="tile"><i class="fa-solid fa-cube"></i><h3>Visualization</h3><p>Technical mastery in CAD and 3D modeling for structural layouts.</p></div>
+            <div class="tile">
+                <i class="fa-solid fa-gavel"></i>
+                <h3>Executive Leadership</h3>
+                <p>Directing high-level creative vision, high-stakes client negotiations, and end-to-end execution of luxury builds.</p>
+            </div>
+            <div class="tile">
+                <i class="fa-solid fa-couch"></i>
+                <h3>Procurement</h3>
+                <p>Strategic cross-border sourcing of custom furniture, master vendor management, and premium FF&E orchestration.</p>
+            </div>
+            <div class="tile">
+                <i class="fa-solid fa-users-line"></i>
+                <h3>Board Consultation</h3>
+                <p>Presenting design matrices to corporate boards of directors with absolute ease, aligning interior aesthetics with broad business objectives.</p>
+            </div>
         </div>
     </div>
 </div>
@@ -115,14 +121,22 @@
 
 <div class="slide-container">
     <h2 class="slide-title">Career Milestones</h2>
-    <div class="content-area">
-        <div style="border-left: 2px solid #C5A059; padding-left: 40px;">
+    <div class="content-area milestone-scroll">
+        <div style="border-left: 2px solid #C5A059; padding-left: 30px;">
             <h3>DCH & Associates</h3>
-            <div class="subtitle" style="margin-bottom: 15px;">2008 – Present | Owner & Principal</div>
+            <div class="subtitle" style="margin-bottom: 10px;">2008 – Present | Owner & Principal</div>
             <ul>
-                <li style="margin-bottom: 10px;">Direct structural production and bespoke end-to-end creative vision.</li>
-                <li style="margin-bottom: 10px;">Partner with builders to ensure budget compliance and feasibility.</li>
-                <li style="margin-bottom: 10px;">Comprehensive evaluation of building regulations and structural layout.</li>
+                <li style="margin-bottom: 5px;">Direct structural layout production and bespoke end-to-end design strategy.</li>
+                <li style="margin-bottom: 5px;">Partner with custom home builders to guarantee architectural compliance and seamless field coordination.</li>
+            </ul>
+        </div>
+        <div style="border-left: 2px solid #C5A059; padding-left: 30px;">
+            <h3>Ethan Allen</h3>
+            <div class="subtitle" style="margin-bottom: 10px;">Rapid Executive Trajectory</div>
+            <ul>
+                <li style="margin-bottom: 5px;">Promoted from baseline Interior Designer to Project Manager within 8 months based on performance.</li>
+                <li style="margin-bottom: 5px;">Elevated to Senior Project Manager in an additional 6 months, commanding operations for the entire premium showroom.</li>
+                <li style="margin-bottom: 5px;">Directed an elite cross-functional staff of 22 professionals, including 15 dedicated interior designers.</li>
             </ul>
         </div>
     </div>
@@ -145,23 +159,23 @@
 </div>
 
 <div class="slide-container">
-    <h2 class="slide-title">Signature Residential Portfolio (01 - 03)</h2>
+    <h2 class="slide-title">Signature Residential Portfolio</h2>
     <div class="content-area">
         <div class="portfolio-grid">
-            <div class="portfolio-item"><div class="portfolio-box"><img src="project1.jpg" alt="P1"></div><div class="subtitle" style="font-size:11px; text-align: center;">Custom Living Space</div></div>
-            <div class="portfolio-item"><div class="portfolio-box"><img src="project2.jpg" alt="P2"></div><div class="subtitle" style="font-size:11px; text-align: center;">Culinary Environment</div></div>
-            <div class="portfolio-item"><div class="portfolio-box"><img src="project3.jpg" alt="P3"></div><div class="subtitle" style="font-size:11px; text-align: center;">Luxury Suite Concept</div></div>
+            <div class="portfolio-item"><div class="portfolio-box"><img src="project1.jpg" alt="P1"></div><div class="subtitle" style="font-size:11px; text-align: center; margin-top: 5px;">Custom Living Space</div></div>
+            <div class="portfolio-item"><div class="portfolio-box"><img src="project2.jpg" alt="P2"></div><div class="subtitle" style="font-size:11px; text-align: center; margin-top: 5px;">Culinary Environment</div></div>
+            <div class="portfolio-item"><div class="portfolio-box"><img src="project3.jpg" alt="P3"></div><div class="subtitle" style="font-size:11px; text-align: center; margin-top: 5px;">Luxury Suite Concept</div></div>
         </div>
     </div>
 </div>
 
 <div class="slide-container">
-    <h2 class="slide-title">Signature Residential Portfolio (04 - 06)</h2>
+    <h2 class="slide-title">Signature Residential Portfolio</h2>
     <div class="content-area">
         <div class="portfolio-grid">
-            <div class="portfolio-item"><div class="portfolio-box"><img src="project4.jpg" alt="P4"></div><div class="subtitle" style="font-size:11px; text-align: center;">Bespoke Interior Architectural Detail</div></div>
-            <div class="portfolio-item"><div class="portfolio-box"><img src="project5.jpg" alt="P5"></div><div class="subtitle" style="font-size:11px; text-align: center;">High-End Residential Transformation</div></div>
-            <div class="portfolio-item"><div class="portfolio-box"><img src="project6.jpg" alt="P6"></div><div class="subtitle" style="font-size:11px; text-align: center;">Premium Custom Spatial Layout</div></div>
+            <div class="portfolio-item"><div class="portfolio-box"><img src="project4.jpg" alt="P4"></div><div class="subtitle" style="font-size:11px; text-align: center; margin-top: 5px;">Bespoke Architectural Detail</div></div>
+            <div class="portfolio-item"><div class="portfolio-box"><img src="project5.jpg" alt="P5"></div><div class="subtitle" style="font-size:11px; text-align: center; margin-top: 5px;">High-End Spatial Transformation</div></div>
+            <div class="portfolio-item"><div class="portfolio-box"><img src="project6.jpg" alt="P6"></div><div class="subtitle" style="font-size:11px; text-align: center; margin-top: 5px;">Premium Custom Layout</div></div>
         </div>
     </div>
 </div>
