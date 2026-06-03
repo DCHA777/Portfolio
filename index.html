@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jessica A. Dazachacon | Executive Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        * { box-sizing: border-box; }
+        body { background-color: #020c1b; display: flex; flex-direction: column; align-items: center; margin: 0; padding: 40px 0; gap: 40px; }
+
+        /* Slide Dimensions 1280x720 */
+        .slide-container { width: 1280px; height: 720px; background-color: #0A192F; border-radius: 8px; box-shadow: 0 30px 60px rgba(0,0,0,0.4); overflow: hidden; position: relative; display: flex; flex-direction: column; padding: 70px 80px; color: #FFFFFF; font-family: 'Montserrat', sans-serif; margin-bottom: 40px; }
+        
+        .slide-container::before { content: ''; position: absolute; top: 0; right: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(10, 25, 47, 1) 0%, rgba(17, 34, 64, 1) 100%); z-index: 0; }
+        .gold-line { position: absolute; bottom: 40px; left: 80px; width: 120px; height: 3px; background-color: #C5A059; z-index: 1; }
+        .slide-container > * { position: relative; z-index: 2; }
+
+        /* Typography */
+        h1 { font-family: 'Playfair Display', serif; font-size: 84px; font-weight: 500; margin: 0; line-height: 1.1; }
+        .slide-title { font-family: 'Playfair Display', serif; font-size: 48px; font-weight: 500; color: #C5A059; margin-bottom: 50px; border-bottom: 1px solid rgba(197,160,89,0.2); padding-bottom: 15px; }
+        h3 { font-family: 'Playfair Display', serif; font-size: 32px; color: #C5A059; margin: 0 0 15px 0; }
+        p, li { font-size: 19px; line-height: 1.6; color: #CCD6F6; font-weight: 300; }
+        .subtitle { font-size: 14px; font-weight: 500; text-transform: uppercase; letter-spacing: 5px; color: #8892B0; }
+        .tagline { font-family: 'Playfair Display', serif; font-style: italic; font-size: 28px; color: #8892B0; margin-top: 40px; }
+
+        /* Layouts */
+        .content-area { flex-grow: 1; display: flex; flex-direction: column; justify-content: center; }
+        .two-column { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+        .tile-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+        .tile { background-color: #112240; padding: 40px; border-radius: 4px; border: 1px solid rgba(197,160,89,0.1); text-align: center; }
+        .tile i { font-size: 45px; color: #C5A059; margin-bottom: 25px; }
+
+        .image-frame { border: 2px solid #C5A059; border-radius: 4px; overflow: hidden; }
+        .image-frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+        .portfolio-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+        .portfolio-box { height: 340px; border: 1px solid rgba(197,160,89,0.3); border-radius: 4px; overflow: hidden; margin-bottom: 10px; }
+        .portfolio-box img { width: 100%; height: 100%; object-fit: cover; }
+
+        /* Tables */
+        table { width: 100%; border-collapse: collapse; }
+        th { text-align: left; color: #C5A059; padding: 15px 0; text-transform: uppercase; letter-spacing: 2px; border-bottom: 2px solid rgba(197,160,89,0.3); }
+        td { padding: 20px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+
+        .download-btn { border: 2px solid #C5A059; color: #C5A059; padding: 18px 45px; text-decoration: none; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; border-radius: 4px; display: inline-block; }
+    </style>
+</head>
+<body>
+
+<div class="slide-container">
+    <div class="gold-line"></div>
+    <div class="content-area">
+        <div class="subtitle">Principal Interior Designer</div>
+        <h1>Jessica A.<br>Dazachacon</h1>
+        <div class="subtitle" style="margin-top:20px;">ASID, Allied Member</div>
+        <div class="tagline">"Dedicated to the art of active listening and collaborating with expertise to build your unique vision."</div>
+    </div>
+</div>
+
+<div class="slide-container">
+    <h2 class="slide-title">Executive Biography</h2>
+    <div class="content-area">
+        <div class="two-column">
+            <div>
+                <p>A distinguished Principal Designer and active <strong>ASID, Allied Member</strong> specializing in high-end residential interiors and functional business crossover spaces.</p>
+                <p>Approaching every project as a unique <strong>"custom canvas,"</strong> she ensures that aesthetic prestige is flawlessly balanced with day-to-day functionality and builder collaboration.</p>
+            </div>
+            <div class="image-frame" style="width: 400px; height: 400px;">
+                <img src="portrait.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="gold-line"></div>
+</div>
+
+<div class="slide-container">
+    <h2 class="slide-title">Core Competencies</h2>
+    <div class="content-area">
+        <div class="tile-grid">
+            <div class="tile"><i class="fa-solid fa-compass-drafting"></i><h3>Leadership</h3><p>Directing the full creative vision and execution of luxury projects.</p></div>
+            <div class="tile"><i class="fa-solid fa-couch"></i><h3>Procurement</h3><p>Strategic sourcing of custom furniture and high-quality FF&E.</p></div>
+            <div class="tile"><i class="fa-solid fa-cube"></i><h3>Visualization</h3><p>Technical mastery in CAD and 3D modeling for structural layouts.</p></div>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container">
+    <h2 class="slide-title">Editorial Recognition</h2>
+    <div class="content-area">
+        <div class="two-column">
+            <div>
+                <div class="subtitle" style="color:#C5A059;">Luxe Interiors + Design</div>
+                <h3>Outdoor Issue Featured Designer</h3>
+                <p>Selected as a Featured Designer in the prestigious Outdoor Issue, validating Jessica's market relevance in luxury residential architecture.</p>
+            </div>
+            <div class="image-frame" style="height: 400px;"><img src="outdoor-living.jpg"></div>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container">
+    <h2 class="slide-title">Career Milestones</h2>
+    <div class="content-area">
+        <div style="border-left: 2px solid #C5A059; padding-left: 40px;">
+            <h3>DCH & Associates</h3>
+            <div class="subtitle">2008 – Present | Owner & Principal</div>
+            <ul>
+                <li>Direct structural production and bespoke end-to-end creative vision.</li>
+                <li>Partner with builders to ensure budget compliance and feasibility.</li>
+                <li>Comprehensive evaluation of building regulations and structural layout.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container">
+    <h2 class="slide-title">Hospitality Heritage</h2>
+    <div class="content-area">
+        <table>
+            <thead><tr><th>Project</th><th>Scope</th><th>Location</th></tr></thead>
+            <tbody>
+                <tr><td><strong>The Mansion at MGM Grand</strong></td><td>Art Consultant / Coordinator</td><td>Las Vegas, NV</td></tr>
+                <tr><td><strong>Caesars Palace / Bellagio</strong></td><td>FF&E Curation & Staging</td><td>Las Vegas, NV</td></tr>
+                <tr><td><strong>JW Marriott Nagoya</strong></td><td>Hospitality Art Integration</td><td>Nagoya, Japan</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="slide-container">
+    <h2 class="slide-title">Signature Portfolio: Residential</h2>
+    <div class="content-area">
+        <div class="portfolio-grid">
+            <div class="portfolio-item"><div class="portfolio-box"><img src="project1.jpg"></div><div class="subtitle" style="font-size:11px;">Custom Living Space</div></div>
+            <div class="portfolio-item"><div class="portfolio-box"><img src="project2.jpg"></div><div class="subtitle" style="font-size:11px;">Culinary Environment</div></div>
+            <div class="portfolio-item"><div class="portfolio-box"><img src="project3.jpg"></div><div class="subtitle" style="font-size:11px;">Luxury Suite</div></div>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container">
+    <h2 class="slide-title">Signature Portfolio: Business</h2>
+    <div class="content-area">
+        <div class="portfolio-grid">
+            <div class="portfolio-item"><div class="portfolio-box"><img src="project4.jpg"></div><div class="subtitle" style="font-size:11px;">Executive Workspace</div></div>
+            <div class="portfolio-item"><div class="portfolio-box"><img src="project5.jpg"></div><div class="subtitle" style="font-size:11px;">Hospitality Concept</div></div>
+            <div class="portfolio-item"><div class="portfolio-box"><img src="project6.jpg"></div><div class="subtitle" style="font-size:11px;">Bespoke Detail</div></div>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container">
+    <h2 class="slide-title">Academic Foundation & Contact</h2>
+    <div class="content-area">
+        <div class="two-column">
+            <div>
+                <h3>Education</h3>
+                <p>Fashion Institute of Design & Merchandising (FIDM)</p>
+                <p class="subtitle" style="color:white;">Los Angeles, CA</p>
+                <div style="margin-top: 40px;">
+                    <p>949.680.9055</p>
+                    <p>jdazachacon@gmail.com</p>
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <a href="Jessica_Dazachacon_Resume.pdf" download class="download-btn">Download PDF Resume</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
