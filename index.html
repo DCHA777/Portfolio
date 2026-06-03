@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         * { box-sizing: border-box; }
-        body { background-color: #020c1b; display: flex; flex-direction: column; align-items: center; margin: 0; padding: 40px 0; gap: 40px; }
+        body { background-color: #020c1b; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0; padding: 40px 0; gap: 40px; width: 100%; }
 
-        /* Slide Dimensions 1280x720 Canvas */
-        .slide-container { width: 1280px; height: 720px; background-color: #0A192F; border-radius: 8px; box-shadow: 0 30px 60px rgba(0,0,0,0.4); overflow: hidden; position: relative; display: flex; flex-direction: column; padding: 70px 80px; color: #FFFFFF; font-family: 'Montserrat', sans-serif; margin-bottom: 40px; }
+        /* Slide Dimensions 1280x720 Canvas - Centered Alignment */
+        .slide-container { width: 1280px; height: 720px; background-color: #0A192F; border-radius: 8px; box-shadow: 0 30px 60px rgba(0,0,0,0.4); overflow: hidden; position: relative; display: flex; flex-direction: column; padding: 70px 80px; color: #FFFFFF; font-family: 'Montserrat', sans-serif; margin: 0 auto 40px auto; }
         
         .slide-container::before { content: ''; position: absolute; top: 0; right: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(10, 25, 47, 1) 0%, rgba(17, 34, 64, 1) 100%); z-index: 0; }
         .gold-line { position: absolute; bottom: 40px; left: 80px; width: 120px; height: 3px; background-color: #C5A059; z-index: 1; }
@@ -34,15 +34,22 @@
         .tile { background-color: #112240; padding: 40px; border-radius: 4px; border: 1px solid rgba(197,160,89,0.1); text-align: center; }
         .tile i { font-size: 45px; color: #C5A059; margin-bottom: 25px; }
 
-        /* High-Definition Fixed Frames */
+        /* High-Definition Fixed Frames - Crisp Photo Resolution Fixed */
         .image-frame { border: 2px solid #C5A059; border-radius: 4px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
         .image-frame img { width: 100%; height: 100%; object-fit: contain; background-color: #112240; display: block; }
 
         .portfolio-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
-        .portfolio-box { height: 340px; border: 1px solid rgba(197,160,89,0.3); border-radius: 4px; overflow: hidden; margin-bottom: 10px; box-shadow: 0 6px 18px rgba(0,0,0,0.3); }
-        .portfolio-box img { width: 100%; height: 100%; object-fit: cover; }
+        .portfolio-box { height: 340px; border: 1px solid rgba(197,160,89,0.3); border-radius: 4px; overflow: hidden; margin-bottom: 10px; box-shadow: 0 6px 18px rgba(0,0,0,0.3); background-color: #112240; }
+        .portfolio-box img { width: 100%; height: 100%; object-fit: contain; }
 
         /* Data Tables */
+        table { width: 100%; border-collapse: collapse; }
+        th { text-align: left; color: #C5A059; padding: 15px 0; text-transform: uppercase; letter-spacing: 2px; border-bottom: 2px solid rgba(197,160,89,0.3); }
+        td { padding: 20px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+
+        .download-btn { border: 2px solid #C5A059; color: #C5A059; padding: 18px 45px; text-decoration: none; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; border-radius: 4px; display: inline-block; transition: all 0.3s ease; }
+        .download-btn:hover { background-color: #C5A059; color: #0A192F; }
+    </style>
         table { width: 100%; border-collapse: collapse; }
         th { text-align: left; color: #C5A059; padding: 15px 0; text-transform: uppercase; letter-spacing: 2px; border-bottom: 2px solid rgba(197,160,89,0.3); }
         td { padding: 20px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
